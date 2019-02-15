@@ -7,9 +7,11 @@ class StarWarsCharacterList extends React.Component {
     } 
 
     render() {
-        return {
-            
-        };
+        return (
+                <div className="StarWarsCharacterList">
+        
+                </div>     
+            );
     }
 }
 
