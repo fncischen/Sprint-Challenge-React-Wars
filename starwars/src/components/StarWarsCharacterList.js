@@ -1,5 +1,6 @@
 import React from 'react';
 import StarWarsCharacterItem from './StarWarsCharacterItem';
+import "./StarWars.css"
 
 class StarWarsCharacterList extends React.Component {
     constructor(props) {
