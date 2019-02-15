@@ -1,6 +1,20 @@
 .characterItem {
     display: block;
-    background-color: white; 
+    background-color: white;
+    border-radius: 10px;
+    width: 50%;
+    padding: 0.5%;
+    margin: 2%;
+}
+
+.characterItem .itemHeader {
+    display: flex;
+    flex-direction: column;
+    background-color: coral;
+    border-radius: 10px;
+    padding-top: 5px;  
+    justify-content: center;
+    margin-bottom: 20px;
 }
 
 .characterItem .itemBlock {
@@ -8,3 +22,4 @@
     flex-direction: row; 
     justify-content: space-around;
 }
+
