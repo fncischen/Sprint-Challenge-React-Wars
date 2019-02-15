@@ -26,11 +26,32 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
+ReactJS is a Javascript library that allows for the creation of dynamic user interfaces. React JS allows users to create reusable code for rendering UI, and managing how data is rendered throughout the life-cycle of the browser through the use of components - which store data about how a browser will render UI data. 
+
+ReactJS is a declarative programming language - meaning, it abstracts all the complex logic ("We are at 123 Maple Street") so that programmers do not need to write the same logic manage data to render UI ("To get to 123 Maple Street, turn left, go straight, etc.").
+
 - [ ] What does it mean to _think_ in react?
+
+To think in "React" is to see front end development as a modular process - each part of a website is based on
+a hierarchy of components, which carry information / data about how user interface is rendered. 
+
+The hierarchy of compoments allow for modular scripting - meaning, you have the ability to separate static versus dynamic data, and you can control how that data flows
+throughout the User Interface, from the parent components all the way to its child components. Similarly, data can also flow upward, from children components, all the way to the parent components, allowing for the ability for one (or several) components to change other components in a website.
+
+In laymans terms, this means that if I am using a Salesforce CRM app, when I input data on one part of the website, that data can be rendered on another part of the website, based on how the component hierarchy is set up. Without ReactJS, there would be far more time to program this same data flow.
+
+Thinking in ReactJS is a seamless way of organizing UI - it is like a tree with branching leaves that allow for the communication of data throughout the website.
 
 - [ ] Describe state.
 
+State refers to muttable data on the website that can be changed, based on event handlers / event listeners / callback functions assigned to any component on the website.
+The user has the ability to change how this data is rendered on the browser, through these event handlers, listeners, and call back functions.
+
+State can be seen as a snapshot in time - each time a frame is being rendered on the browser, the user has an ability to change the state data.   
+
 - [ ] Describe props.
+
+Props are immutable static data that cannot be changed through the entire lifecycle of the browser. Props represent read-only data specific to the component. 
 
 ## Project Set Up
 
