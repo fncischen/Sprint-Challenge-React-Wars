@@ -1,9 +1,12 @@
 import React from 'react';
 
 const StarWarsCharacterItem = props => {
-    return {
+    return (
+        <div className="characterItem">
+            
 
-    }
+        </div>
+    )
 }
 
 export default StarWarsCharacterItem;

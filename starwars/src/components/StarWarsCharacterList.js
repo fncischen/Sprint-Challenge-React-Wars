@@ -7,11 +7,20 @@ class StarWarsCharacterList extends React.Component {
     } 
 
     render() {
+
+        // test to see what the props are
+        console.log(this.props.list);
+
         return (
-                <div className="StarWarsCharacterList">
-        
-                </div>     
-            );
+            <ul>
+
+            { this.props.list.map(a_character =>
+                <StarWarsCharacterItem character={a_character} />
+            )
+
+            }
+            </ul>
+        );
     }
 }
 
