@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import StarWarsCharacterList from './components/StarWarsCharacterList';
 
 class App extends Component {
   constructor() {
@@ -10,8 +11,10 @@ class App extends Component {
   }
 
   componentDidMount() {
-    this.getCharacters('https://swapi.co/api/people');
+    this.getCharacters('https://swapi.co/api/people/');
   }
+
+  // https://scotch.io/tutorials/build-custom-pagination-with-react
 
   getCharacters = URL => {
     // feel free to research what this code is doing.
@@ -33,6 +36,7 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <StarWarsCharacterList list={this.state.starwarsChars} />
       </div>
     );
   }
